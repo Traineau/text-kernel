@@ -103,7 +103,7 @@ class XmlToModel
 
         if (strlen($value) <= 0) {
             return null;
-        } else if (preg_match('/Code$/i', $key)) {
+        } else if (preg_match('/Code$/i', $key) && is_numeric($value)) {
             return (int)$value;
         } else if (preg_match('/Date$/i', $key) || preg_match('/^Date/i', $key)) {
             if (($value = \DateTime::createFromFormat('Y-m-d', $value)) !== false) {
