@@ -13,7 +13,7 @@ namespace Eoko\TextKernel\Model;
 class LanguageSkillModel extends XmlModelBase
 {
     /**
-     * @var integer
+     * @var string
      */
     private $languageSkillCode;
     /**
@@ -30,7 +30,7 @@ class LanguageSkillModel extends XmlModelBase
     private $languageProficiencyCodeDescription;
 
     /**
-     * @return int
+     * @return string
      */
     public function getLanguageSkillCode()
     {
@@ -38,7 +38,7 @@ class LanguageSkillModel extends XmlModelBase
     }
 
     /**
-     * @param int $languageSkillCode
+     * @param string $languageSkillCode
      * @return LanguageSkillModel
      */
     public function setLanguageSkillCode($languageSkillCode)
